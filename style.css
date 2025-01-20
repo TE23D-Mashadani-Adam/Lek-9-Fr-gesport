@@ -1,0 +1,17 @@
+.fråga_div{
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    margin: 5px;
+}
+.svar_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-self: center;
+    width: 400px;
+}
