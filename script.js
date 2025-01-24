@@ -8,8 +8,8 @@ let ny_fråga_btn = document.querySelector(".ny_fråga_btn");
 let nyttLand = document.querySelector("#nytt_land_input");
 let nyttHuvudstad = document.querySelector("#ny_huvudstad_input");
 
-let länder = ["Sverige", "Danmark", "Tyskland", "Syrien", "Frankrike"];
-let huvudstäder = ["Stockholm", "Copenhagen", "Berlin", "Damascus", "Paris"];
+let länder = ["Sverige", "Danmark", "Tyskland", "Syrien", "Paraguay", "Turkiet", "Ghana"];
+let huvudstäder = ["Stockholm", "Copenhagen", "Berlin", "Damascus", "Asuncion", "Ankara", "Accra"];
 
 let nuvarandeNummer = 0;
 
@@ -24,6 +24,13 @@ function VisaFråga()
 function VisaSvar() 
 {
     facit_ruta.textContent = huvudstäder[nuvarandeNummer];
+    if (svar_ruta.value != huvudstäder[nuvarandeNummer])
+    {
+        alert("Du är en idiot, fel svar!");
+    }else
+    {
+        alert("Du är bäst, rätt svar!");
+    }
 }
 
 function LäggTill()
@@ -32,6 +39,9 @@ function LäggTill()
     {
         länder.push(nyttLand.value);
         huvudstäder.push(nyttHuvudstad.value);
+
+        nyttHuvudstad.value = "";
+        nyttLand.value = "";
     }else
     {
         alert("Är du en idiot?");
