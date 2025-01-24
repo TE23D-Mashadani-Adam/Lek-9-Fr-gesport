@@ -3,17 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Frågesport</title>
 </head>
 <body>
     <div class="fråga_div">
         <p>Fråga: </p>
+        <p class="fråga"></p>
     </div>
     <div class="svar_div">
         <p>Ange ditt svar</p>
         <input type="text" name="" id="svar_input">
-        <button type="button">Klicka för svar</button>
+        <button type="button" class="btn" onclick="VisaSvar()">Klicka för svar</button>
+    </div>
+
+    <div class="rätt_svar">
+        <p>SVAR: </p>
+        <p class="facit_ruta"> </p>
+        <button type="button" class="ny_fråga_btn" onclick="VisaFråga()">Ny fråga</button>
+    </div>
+
+    <h2>Lägg till en ny fråga</h2>
+    <div class="lägga_till">
+        <p>Ange ett nytt land</p>
+        <input type="text" name="" id="nytt_land_input">
+        <p>Ange en ny stad</p>
+        <input type="text" name="" id="ny_huvudstad_input">
+        <button type="button" class="lägg_till_btn" onclick="LäggTill()">Lägg till</button>
     </div>
 </body>
 </html>

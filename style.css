@@ -15,3 +15,29 @@
     justify-self: center;
     width: 400px;
 }
+.rätt_svar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.ny_fråga_btn{
+    margin-left: 10px;
+}
+
+.lägga_till{
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+h2{
+    text-align: center;
+    margin-top: 70px;
+}
